@@ -14,6 +14,14 @@ HotRestaurant.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "../../index.html"))
  });
 
+ HotRestaurant.get('/form.html', (req, res) => {
+    res.sendFile(path.join(__dirname, "../../form.html"))
+ });
+
+ HotRestaurant.get('/views.html', (req, res) => {
+    res.sendFile(path.join(__dirname, "../../views.html"))
+ });
+
 
 HotRestaurant.listen(PORT);
 console.log("Listening to port: " + PORT);
